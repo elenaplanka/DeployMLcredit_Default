@@ -2,3 +2,5 @@
 
 curl -X POST http://localhost:80/predict -H "Content-Type: application/json" -d '{"features": [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 0, 0, 0]}'
 docker run -it --rm --name=predict_default -p=80:80 credit_web
+
+docker pull elenazorge/credit_web:latest
