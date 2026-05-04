@@ -30,3 +30,5 @@
 
 3. Для  запуска  модели требуется  скачать образ docker pull elenazorge/credit_web:latest  с https://hub.docker.com  и в папке проекта выполнить запуск контейнера  docker run -it --rm --name=predict_default -p=80:80 credit_web
 
+4. Необходимы и достаточный  набор файлов  для  запуска контейнера в папке проекта: Dockerfile, app/server.py, app/GBselect_model.joblib, requirements.txt,uwsgi.ini
+5. Файл client_requests.py  - опционально реализован  скрипт  для тесттирования  подачи входных данных и предсказания
